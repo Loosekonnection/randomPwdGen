@@ -8,6 +8,11 @@ function genRanLc() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
+// Generate Random Uppercase Letters Function
+function genRanUc() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
