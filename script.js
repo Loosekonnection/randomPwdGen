@@ -1,3 +1,8 @@
+// Generate Random Numbers Function
+function genRanNum() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
