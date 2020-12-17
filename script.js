@@ -3,6 +3,11 @@ function genRanNum() {
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
+// Generate Random Lowercase Letters Function
+function genRanLc() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
