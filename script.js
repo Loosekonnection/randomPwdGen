@@ -13,6 +13,12 @@ function genRanUc() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
+// Generate Random Special Characters Function
+function genRanSpl() {
+  var symbols = ['!', '\"', '£', '$', '%', '^', '&', '*', '>', '<', '\;', '(', ')', '+', '.', ',', '-', ':', '?', '[', ']', '_', '{', '}', '@', '\/', '\\',];
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
