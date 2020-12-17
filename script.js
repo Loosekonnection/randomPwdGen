@@ -24,7 +24,15 @@ function generatePassword() {
   pwdLength = prompt("Please choose a password length between 8 and 128 Characters long");
   if (pwdLength >= 8 && pwdLength <= 128) {
 
-    
+    var numChoice = confirm("Would you like the password to contain: Numbers?");
+
+    var lcChoice = confirm("Would you like the password to contain: Lowercase Letters?");
+
+    var ucChoice = confirm("Would you like the password to contain: Uppercase Letters?");
+
+    var splChoice = confirm("Would you like the password to contain: Special Characters?");
+
+    console.log(numChoice, lcChoice, ucChoice, splChoice);
 
   } else {
     alert("That number was not between 8 and 128! Please try again.");
