@@ -19,6 +19,18 @@ function genRanSpl() {
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
+// User Prompts to generate a password from
+function generatePassword() {
+  pwdLength = prompt("Please choose a password length between 8 and 128 Characters long");
+  if (pwdLength >= 8 && pwdLength <= 128) {
+
+    
+
+  } else {
+    alert("That number was not between 8 and 128! Please try again.");
+  }
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
