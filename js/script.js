@@ -69,7 +69,8 @@ function generatePassword() {
     // If no options/countChoices are selected, break out and advise user
     if (countChoices === 0) {
 
-      alert("No options were selected, please try again.")
+      password = "No options were selected! Please try again.";
+      return password;
 
     } else {
 
@@ -87,6 +88,7 @@ function generatePassword() {
     }
 
   } else {
-    alert("That number was not between 8 and 128! Please try again.");
+    password = "That number was not between 8 and 128! Please try again.";
+    return password;
   }
 }
