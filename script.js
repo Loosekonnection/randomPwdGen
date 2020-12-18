@@ -13,7 +13,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Object for Generate Random Characters functions
+// Object to Generate Random Characters functions
 var genRanFunctions = {
   ranNum: genRanNum,
   ranLc: genRanLc,
@@ -44,32 +44,55 @@ function genRanSpl() {
 
 // User Prompts to generate a password from
 function generatePassword() {
-  pwdLength = prompt("Please choose a password length between 8 and 128 Characters long");
+  pwdLength = parseInt(prompt("Please choose a password length between 8 and 128 Characters long"));
   if (pwdLength >= 8 && pwdLength <= 128) {
-
+    
     var numChoice = confirm("Would you like the password to contain: Numbers?");
     var lcChoice = confirm("Would you like the password to contain: Lowercase Letters?");
     var ucChoice = confirm("Would you like the password to contain: Uppercase Letters?");
     var splChoice = confirm("Would you like the password to contain: Special Characters?");
-    console.log(pwdLength, numChoice, lcChoice, ucChoice, splChoice);
 
-    // calculating the boolean true choices
+console.log(typeof pwdLength, pwdLength, numChoice, lcChoice, ucChoice, splChoice);
+
+    // calculating the boolean true choices, so we can break out if none are chosen
     var countChoices = numChoice + lcChoice + ucChoice + splChoice;
-    // console.log(countChoices);
+
+console.log(countChoices);
 
     // Array of Objects containing the Choices and then filtering out false choices
     var choicesArr = [{ numChoice }, { lcChoice }, { ucChoice }, { splChoice }].filter
       (
         item => Object.values(item)[0]
       );
-    // console.log(choicesArr); // Console logs the Array of Objects with their key of true
 
-    // If no options are selected, advise user
+console.log(choicesArr); // Console logs the Array of Objects with their key of true
+    
+    var genPassword = '';
+    
+    // If no options/countChoices are selected, break out and advise user
     if (countChoices === 0) {
 
       alert("No options were selected, please try again.")
 
-    } 
+    } else {
+
+      for (var i = 0; i < pwdLength; i += countChoices) {
+        choicesArr.forEach(choice => {
+          var choice = Object.keys(choice)[0];
+
+console.log('choices: ', choice);
+
+
+          genPassword += Object.genRanFunctions[choice];
+          
+
+
+        });
+      }
+      password = genPassword;
+      return password;
+      // console.log('password: ', password);
+    }
 
   } else {
     alert("That number was not between 8 and 128! Please try again.");
