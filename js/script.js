@@ -69,16 +69,16 @@ function generatePassword() {
     // If no options/countChoices are selected, break out and advise user
     if (countChoices === 0) {
 
-      password = "No options were selected! Please try again.";
+      password = "No options selected, You will need to select at least one! Please try again.";
       return password;
 
     } else {
 
       for (var i = 0; i <= pwdLength;) {
         choicesArr.forEach(choice => {
-          var choice = Object.keys(choice)[0];
-          // console.log('choices: ', choice);
-          genPassword += eval(genRanFunctions[choice]);
+          var chosen = Object.keys(choice)[0];
+          // console.log('choices: ', chosen);
+          genPassword += eval(genRanFunctions[chosen]);
           i++;
         });
       }
