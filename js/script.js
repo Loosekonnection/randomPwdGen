@@ -69,7 +69,7 @@ function generatePassword() {
                 return 0.5 - Math.random()
             }).join('');
             return password.slice(0, pwdLength);
-        // Prompt end user no options/countChoices were selected
+            // Prompt end user no options/countChoices were selected
         } else {
             password = "No options selected, You will need to select at least one! Please try again.";
             return password;
