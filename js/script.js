@@ -64,7 +64,7 @@ function generatePassword() {
                     i++;
                 });
             }
-            // This splits and randomly shuffles the generated genPassword string
+            // Splits and randomly shuffles the generated genPassword string
             password = genPassword.split('').sort(function () {
                 return 0.5 - Math.random()
             }).join('');
