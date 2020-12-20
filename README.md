@@ -7,7 +7,7 @@
 
 <br>
 
-## Psuedo Code
+## Pseudo Code
 
 *   The Password Generator must return a random password based on a series of questions/prompts to the end user after the end user clicks the 'Generate Password' button.
 
@@ -21,15 +21,15 @@
 
 *   Q1: Please choose a password length between 8 and 128 characters long.
 
-    *   The user must be advised of the minimum and maximum charater choice available.
+    *   The user must be advised of the minimum and maximum character choice available.
     *   If the number input by the end user is outside of 8 - 128, the user must be prompted to try again.
     *   If the number input by the end user is between 8 and 128, the next question must be presented.
 
 *   Q2-Q5: These questions are of Yes or No choice, for this a true or false confirm can be used.
 
     *   If the answer to any of these questions is True, the respective characters need to be in the randomly generated password.
-    *   If the answer to any of these questions is fales, we need to filter/exculed these from the randomly generated password.
-    *   If a user chooses false to all of these questions, no password can be generated. The page will then need to notify the end user that they must at a minimum include at least one of the character types or the password to be genterated.
+    *   If the answer to any of these questions is false, we need to filter/excluded these from the randomly generated password.
+    *   If a user chooses false to all of these questions, no password can be generated. The page will then need to notify the end user that they must at a minimum include at least one of the character types or the password to be generated.
 
 
 ---
@@ -51,18 +51,18 @@
 
 ![alt](README_img/screenshot_03.PNG)
 
-*   If the number entered is between 8 and 128, the end user is prompted with a series of prompts asking which types of charaters the end user can choose to or not to include in their required password.
+*   If the number entered is between 8 and 128, the end user is prompted with a series of prompts asking which types of characters the end user can choose to or not to include in their required password.
 
 ![alt](README_img/screenshot_04.PNG)
 ![alt](README_img/screenshot_05.PNG)
 ![alt](README_img/screenshot_06.PNG)
 ![alt](README_img/screenshot_07.PNG)
 
-*   If the end user does not choose any charater type, the password cannot be generated and the end user is notified to try again.
+*   If the end user does not choose any character type, the password cannot be generated and the end user is notified to try again.
 
 ![alt](README_img/screenshot_08.PNG)
 
-*   If the end user succesfully chooses some characters the password is randomly generated and presented to the screen.
+*   If the end user successfully chooses some characters the password is randomly generated and presented to the screen.
 
 ![alt](README_img/screenshot_09.PNG)
 
@@ -85,9 +85,9 @@
 
 *   Math.floor & Math.random [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
 
-*   Most of the answers to my research on this project have come from [Stack Overflow](https://stackoverflow.com/), it has been my goto for help with almost all of my coding queries.
+*   Most of the answers to my research on this project have come from [Stack Overflow](https://stackoverflow.com/), it has been my main go to for help with almost all of my coding queries.
 
-* For syntax help when finding a solution elsewhere [w3schools.com](https://www.w3schools.com/jsref/default.asp) is and has been a fanrtastic reference guide.
+* For syntax help when finding a solution elsewhere [w3schools.com](https://www.w3schools.com/jsref/default.asp) is and has been a fantastic reference guide.
 ---
 <br>
 
