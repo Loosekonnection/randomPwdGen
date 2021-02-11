@@ -36,6 +36,14 @@
 
 <br>
 
+## Technolgies Used
+
+*   HMTL [w3schools.com Learn HTML](https://www.w3schools.com/html/default.asp)
+*   CSS [w3schools.com Learn CSS](https://www.w3schools.com/css/default.asp)
+*   JavaScript [w3schools.com JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+---
+
+<br>
 
 ##  Using the Password Generator
 
